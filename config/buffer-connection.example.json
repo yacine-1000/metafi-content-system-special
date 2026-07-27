@@ -1,0 +1,11 @@
+{
+  "provider": "buffer",
+  "connected_at": "YYYY-MM-DDTHH:mm:ss.sssZ",
+  "organization_id": "BUFFER_ORGANIZATION_ID",
+  "organization_name": "BUFFER_ORGANIZATION_NAME",
+  "channel_id": "BUFFER_CHANNEL_ID",
+  "channel_name": "BUFFER_CHANNEL_NAME",
+  "channel_service": "tiktok",
+  "channel_username": "BUFFER_CHANNEL_USERNAME",
+  "status": "connected"
+}
