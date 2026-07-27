@@ -1,5 +1,6 @@
 'use strict';
 
+const fs = require('fs');
 const path = require('path');
 const ExcelJS = require('exceljs');
 
@@ -21,39 +22,62 @@ function cellText(cell) {
 }
 
 function createApprovedTaxonomyService(options = {}) {
-  const workbookPath = path.resolve(options.workbookPath || path.join(__dirname, '..', '..', 'content', 'script-library', 'source', 'script-library.xlsx'));
+  const workbookPath = path.resolve(options.workbookPath || path.join(
+    __dirname, '..', '..', 'content', 'script-library', 'source', 'nail_spa_script_library_final.xlsx',
+  ));
+
   async function getTaxonomy() {
-    const stat = await require('fs').promises.stat(workbookPath);
+    const stat = await fs.promises.stat(workbookPath);
     const version = `${stat.mtimeMs}:${stat.size}`;
     const cached = taxonomyCache.get(workbookPath);
     if (cached && cached.version === version) return cached.value;
     const workbook = new ExcelJS.Workbook();
-    try { await workbook.xlsx.readFile(workbookPath); } catch (error) { throw new ApprovedTaxonomyError(`Unable to read approved taxonomy workbook: ${error.message}`); }
-    const sheet = workbook.getWorksheet('Taxonomy');
-    if (!sheet) throw new ApprovedTaxonomyError('Workbook is missing the Taxonomy sheet');
+    try {
+      await workbook.xlsx.readFile(workbookPath);
+    } catch (error) {
+      throw new ApprovedTaxonomyError(`Unable to read approved taxonomy workbook: ${error.message}`);
+    }
+    const sheet = workbook.getWorksheet('Script Library');
+    if (!sheet) throw new ApprovedTaxonomyError('Workbook is missing the Script Library sheet');
+    const expectedHeaders = ['Source Set ID', 'Script ID', 'Pillar', 'Pillar Name', 'Version', 'Status'];
+    expectedHeaders.forEach((expected, index) => {
+      const actual = cellText(sheet.getRow(1).getCell(index + 1));
+      if (actual !== expected) {
+        throw new ApprovedTaxonomyError(`Script Library column ${index + 1} must be "${expected}"`);
+      }
+    });
+
     const pillars = new Set();
     const hookTypes = new Set();
-    const formats = new Set();
+    const formats = new Set(['listicle']);
     const subtopics = [];
-    let section = null;
-    sheet.eachRow({ includeEmpty: true }, (row) => {
-      const first = cellText(row.getCell(1));
-      const second = cellText(row.getCell(2));
-      if (first === 'Section A — Pillars') { section = 'pillars'; return; }
-      if (first === 'Section B — Hook Types') { section = 'hooks'; return; }
-      if (first === 'Section C — Formats') { section = 'formats'; return; }
-      if (first === 'Section D — Suggested Subtopics') { section = 'subtopics'; return; }
-      if (!first) return;
-      if (section === 'pillars') pillars.add(first);
-      else if (section === 'hooks') hookTypes.add(first);
-      else if (section === 'formats') formats.add(first);
-      else if (section === 'subtopics' && second) subtopics.push({ subtopic: first, pillar: second });
-    });
-    if (!pillars.size || !hookTypes.size || !formats.size || !subtopics.length) throw new ApprovedTaxonomyError('Approved taxonomy is incomplete');
-    const value = { pillars: [...pillars], subtopics, hook_types: [...hookTypes], formats: [...formats] };
+    const seenSubtopics = new Set();
+    for (let rowNumber = 2; rowNumber <= sheet.rowCount; rowNumber += 1) {
+      const row = sheet.getRow(rowNumber);
+      if (!row.hasValues) continue;
+      const pillar = cellText(row.getCell(3));
+      const pillarName = cellText(row.getCell(4));
+      const versionName = cellText(row.getCell(5));
+      if (pillar) pillars.add(pillar);
+      if (versionName) hookTypes.add(versionName);
+      if (pillar && pillarName && !seenSubtopics.has(`${pillar}\0${pillarName}`)) {
+        subtopics.push({ subtopic: pillarName, pillar });
+        seenSubtopics.add(`${pillar}\0${pillarName}`);
+      }
+    }
+    if (!pillars.size || !hookTypes.size || !subtopics.length) {
+      throw new ApprovedTaxonomyError('Approved taxonomy is incomplete');
+    }
+    const value = {
+      pillars: [...pillars],
+      subtopics,
+      hook_types: [...hookTypes],
+      formats: [...formats],
+    };
     taxonomyCache.set(workbookPath, { version, value });
     return value;
   }
+
   return { getTaxonomy };
 }
 

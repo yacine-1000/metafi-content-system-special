@@ -6,7 +6,8 @@ const { invalidateScriptLibraryCache } = require('../scripts/scriptLibrary');
 const { invalidateApprovedTaxonomyCache } = require('./approvedTaxonomyService');
 
 const SOURCE_SET_PATTERN = /^SET-(\d{3,})$/;
-const VERSION_PATTERN = /^(Original|Variation ([1-9]\d*))$/;
+const VERSION_PATTERN = /^(ORIGINAL|V([1-9]\d*))$/;
+const SLIDE_TWO_TEXT = 'احفظي المقطع\nبتحتاجينه';
 
 class ScriptLibraryWriteError extends Error {}
 
@@ -30,7 +31,7 @@ function requiredText(value, location) {
 }
 
 function canonicalScriptId(sourceSetId, version) {
-  return version === 'Original' ? `${sourceSetId}-ORIGINAL` : `${sourceSetId}-V${VERSION_PATTERN.exec(version)[2]}`;
+  return version === 'ORIGINAL' ? `${sourceSetId}-ORIGINAL` : `${sourceSetId}-${version}`;
 }
 
 function loadRuntimeTruth(libraryDir, index) {
@@ -82,6 +83,7 @@ function validateSourceSet(input, sourceSetId, taxonomy) {
   const pillar = requiredText(input.pillar, 'pillar');
   const subtopic = requiredText(input.subtopic, 'subtopic');
   const topic = requiredText(input.topic, 'topic');
+  const pillarName = input.pillar_name == null ? subtopic : requiredText(input.pillar_name, 'pillar_name');
   if (!taxonomy.pillars.has(pillar)) throw new ScriptLibraryWriteError(`Unknown pillar "${pillar}"`);
   if (!taxonomy.subtopics.has(subtopic)) throw new ScriptLibraryWriteError(`Unknown subtopic "${subtopic}"`);
   if (taxonomy.subtopics.get(subtopic) !== pillar) throw new ScriptLibraryWriteError(`Subtopic "${subtopic}" does not belong to pillar "${pillar}"`);
@@ -105,25 +107,26 @@ function validateSourceSet(input, sourceSetId, taxonomy) {
     const format = requiredText(script.format, `${at}.format`);
     if (!taxonomy.hookTypes.has(hookType)) throw new ScriptLibraryWriteError(`${at}.hook_type is unknown`);
     if (!taxonomy.formats.has(format)) throw new ScriptLibraryWriteError(`${at}.format is unknown`);
-    if (!Number.isInteger(script.original_slide_count) || script.original_slide_count < 1) throw new ScriptLibraryWriteError(`${at}.original_slide_count must be a positive integer`);
-    if (!Number.isInteger(script.final_slide_count) || script.final_slide_count < 1 || script.final_slide_count > 12) throw new ScriptLibraryWriteError(`${at}.final_slide_count must be an integer from 1 to 12`);
-    if (script.final_slide_count !== script.original_slide_count + 1) throw new ScriptLibraryWriteError(`${at}.final_slide_count must equal original_slide_count + 1`);
+    if (!Number.isInteger(script.original_slide_count) || script.original_slide_count < 3 || script.original_slide_count > 12) throw new ScriptLibraryWriteError(`${at}.original_slide_count must be an integer from 3 to 12`);
+    if (!Number.isInteger(script.final_slide_count) || script.final_slide_count < 3 || script.final_slide_count > 12) throw new ScriptLibraryWriteError(`${at}.final_slide_count must be an integer from 3 to 12`);
+    if (script.final_slide_count !== script.original_slide_count) throw new ScriptLibraryWriteError(`${at}.final_slide_count must equal original_slide_count`);
     if (!Array.isArray(script.slides) || script.slides.length !== script.final_slide_count) throw new ScriptLibraryWriteError(`${at}.slides must match final_slide_count`);
     const slides = script.slides.map((slide, slideIndex) => {
       const number = slideIndex + 1;
       const slideAt = `${at}.slides[${slideIndex}]`;
       if (!slide || slide.slide_number !== number) throw new ScriptLibraryWriteError(`${slideAt}.slide_number must be ${number}`);
-      const isMetafi = number === 4;
-      const expectedLabel = isMetafi ? 'Slide 4 — Metafi' : `Slide ${number}`;
+      const isCta = number === script.final_slide_count;
+      const expectedLabel = `Slide ${number}`;
       if (slide.slide_label !== expectedLabel) throw new ScriptLibraryWriteError(`${slideAt}.slide_label must be "${expectedLabel}"`);
-      if (slide.is_metafi_slide !== isMetafi) throw new ScriptLibraryWriteError(`${slideAt}.is_metafi_slide must be ${isMetafi}`);
-      return { slide_number: number, slide_label: expectedLabel, is_metafi_slide: isMetafi, text: requiredText(slide.text, `${slideAt}.text`) };
+      if (slide.is_metafi_slide !== isCta) throw new ScriptLibraryWriteError(`${slideAt}.is_metafi_slide must mark only the final CTA slide`);
+      const text = requiredText(slide.text, `${slideAt}.text`);
+      if (number === 2 && text !== SLIDE_TWO_TEXT) throw new ScriptLibraryWriteError(`${slideAt}.text must match the required Slide 2 text`);
+      return { slide_number: number, slide_label: expectedLabel, is_metafi_slide: isCta, text };
     });
-    if (script.final_slide_count < 4) throw new ScriptLibraryWriteError(`${at} must include the labeled Metafi slide`);
-    return { script_id: scriptId, script_version: version, hook_type: hookType, format, original_slide_count: script.original_slide_count, final_slide_count: script.final_slide_count, slides };
+    return { script_id: scriptId, script_version: version, status: script.status || 'Ready', hook_type: hookType, format, original_slide_count: script.original_slide_count, final_slide_count: script.final_slide_count, slides };
   });
-  if (!versions.has('Original')) throw new ScriptLibraryWriteError('Source set must contain one Original script');
-  return { source_set_id: sourceSetId, pillar, subtopic, topic, scripts };
+  if (!versions.has('ORIGINAL')) throw new ScriptLibraryWriteError('Source set must contain one ORIGINAL script');
+  return { source_set_id: sourceSetId, pillar, pillar_name: pillarName, subtopic, topic, scripts };
 }
 
 function createScriptLibraryWriteService(options = {}) {
@@ -189,7 +192,7 @@ function createScriptLibraryWriteService(options = {}) {
       const sourceSet = validateSourceSet(input, sourceSetId, taxonomy);
       sourcePath = path.join(sourceSetsDir, `${sourceSetId}.json`);
       if (fs.existsSync(sourcePath)) throw new ScriptLibraryWriteError(`${sourceSetId} already exists`);
-      const entry = { source_set_id: sourceSetId, file: `source-sets/${sourceSetId}.json`, pillar: sourceSet.pillar, subtopic: sourceSet.subtopic, topic: sourceSet.topic, hook_types: [...new Set(sourceSet.scripts.map((script) => script.hook_type))], script_count: sourceSet.scripts.length };
+      const entry = { source_set_id: sourceSetId, file: `source-sets/${sourceSetId}.json`, pillar: sourceSet.pillar, pillar_name: sourceSet.pillar_name, subtopic: sourceSet.subtopic, topic: sourceSet.topic, hook_types: [...new Set(sourceSet.scripts.map((script) => script.hook_type))], script_count: sourceSet.scripts.length };
       const updatedIndex = { ...index, source_sets: [...index.source_sets, entry] };
       sourceTemp = writeTemp(sourcePath, sourceSet);
       indexTemp = writeTemp(indexPath, updatedIndex);

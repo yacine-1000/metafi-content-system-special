@@ -1,380 +1,315 @@
 {
   "source_set_id": "SET-006",
-  "pillar": "Hybrid Athlete / Sport + Gym Balance",
-  "subtopic": "Running + Gym",
-  "topic": "Combining Three Runs with Gym",
+  "pillar": "P2",
+  "pillar_name": "Managing and Growing a Nail Spa",
+  "subtopic": "Managing and Growing a Nail Spa",
+  "topic": "Managing and Growing a Nail Spa",
   "scripts": [
     {
       "script_id": "SET-006-ORIGINAL",
-      "script_version": "Original",
-      "hook_type": "Original",
-      "format": "Routine / Schedule",
-      "original_slide_count": 6,
-      "final_slide_count": 7,
+      "script_version": "ORIGINAL",
+      "status": "Ready",
+      "hook_type": "ORIGINAL",
+      "format": "listicle",
+      "original_slide_count": 11,
+      "final_slide_count": 11,
       "slides": [
         {
           "slide_number": 1,
           "slide_label": "Slide 1",
           "is_metafi_slide": false,
-          "text": "‏إذا تركض 3مرات بالأسبوع كيف ترتب جدول الحديد؟"
+          "text": "عندك نيل سبا أو تفكرين تفتحين؟\nهذي أخطاء تقتل مشروعك"
         },
         {
           "slide_number": 2,
           "slide_label": "Slide 2",
           "is_metafi_slide": false,
-          "text": "‏خل ركضك كذا:\n• Easy Run\n• Speed Run\n• Long Run"
+          "text": "احفظي المقطع\nبتحتاجينه"
         },
         {
           "slide_number": 3,
           "slide_label": "Slide 3",
           "is_metafi_slide": false,
-          "text": "‏أفضل تقسيمة حديد لك:\n• Upper Body\n• Lower Body\n‏• ‎Full Body‎ كذا تمرن جسمك كامل بدون ما تتعب رجولك طول الأسبوع"
+          "text": "الإنستقرام ما يشد\n\nالمشكلة:\nصور عشوائية وإضاءة ضعيفة\nوما فيه هوية\n\nالحل:\nوحدي شكل الحساب واستخدمي صور واضحة\nبإضاءة زينة\nونزلي قبل وبعد وفوائد وعروض"
         },
         {
           "slide_number": 4,
-          "slide_label": "Slide 4 — Metafi",
-          "is_metafi_slide": true,
-          "text": "سو لك جدول حديد يتعدل حسب رياضاتك\nاستخدم هذا"
+          "slide_label": "Slide 4",
+          "is_metafi_slide": false,
+          "text": "ما فيه طريقة حجز واضحة\n\nالمشكلة:\nالعميلة ما تعرف كيف تحجز\n\nالحل:\nحطي رابط واتساب وسوي هايلايت للحجز\nونزلي جدول المواعيد كل أسبوع"
         },
         {
           "slide_number": 5,
           "slide_label": "Slide 5",
           "is_metafi_slide": false,
-          "text": "‏مثال على الأسبوع:\n‏• السبت ‎Upper Body‎\n‏• الأحد ‎Easy Run‎\n‏• الاثنين ‎Lower Body‎\n‏• الثالثاء راحة\n‏• الأربعاء ‎Speed Run‎\n‏• الخميس ‎Full Body‎\n‏• الجمعة ‎Long Run‎"
+          "text": "ما تعرضين آراء العميلات\n\nالمشكلة:\nالعميلات الجدد ما يثقون\n\nالحل:\nانشري سكرينات الواتساب\nبالهايلايت والستوريات\nوغطي الأرقام"
         },
         {
           "slide_number": 6,
           "slide_label": "Slide 6",
           "is_metafi_slide": false,
-          "text": "‏أهم شيء ال تحط ‎Leg Day‎ قوي قبل ‎Speed Run‎ أو ‎Long Run‎ بيوم"
+          "text": "الأسعار مو واضحة\n\nالمشكلة:\nالعميلة تنصدم وتفقد الثقة\n\nالحل:\nنزلي بوست للأسعار\nوسوي هايلايت فيه كل التفاصيل"
         },
         {
           "slide_number": 7,
           "slide_label": "Slide 7",
           "is_metafi_slide": false,
-          "text": "‏وفي تمارين الرجل ال تكثر تمارين وال توصل للفشل بكل مجموعة، خل عندك طاقة للركض ومناسب ج ًدا للتضخيم"
+          "text": "ما تبينين النظافة\n\nالمشكلة:\nبعض البنات يترددون\n\nالحل:\nصوري التعقيم والقفازات\nوترتيب المكان بانتظام"
+        },
+        {
+          "slide_number": 8,
+          "slide_label": "Slide 8",
+          "is_metafi_slide": false,
+          "text": "تقدمين كل شي\n\nالمشكلة:\nالهوية تضيع\n\nالحل:\nركزي على الأظافر\nأو الأظافر مع خدمة بسيطة\nوخلي هويتك واضحة بكل مكان"
+        },
+        {
+          "slide_number": 9,
+          "slide_label": "Slide 9",
+          "is_metafi_slide": false,
+          "text": "ما فيه قبل وبعد ولا فيديوهات\n\nالمشكلة:\nالحساب بارد\n\nالحل:\nنزلي ريلز قبل وبعد\nولقطات أثناء الجلسة\nوتصوير قريب بإضاءة مرتبة"
+        },
+        {
+          "slide_number": 10,
+          "slide_label": "Slide 10",
+          "is_metafi_slide": false,
+          "text": "ما فيه عروض ولا حافز للرجعة\n\nالمشكلة:\nما فيه سبب يخليهم يرجعون\n\nالحل:\nسوي عروض مؤقتة أو نظام ولاء\nمثلاً الجلسة الخامسة\nخصم ٢٠٪"
+        },
+        {
+          "slide_number": 11,
+          "slide_label": "Slide 11",
+          "is_metafi_slide": true,
+          "text": "الاهم من كذا تعرفين اسرار المشروع وطريقة البدء "
         }
       ]
     },
     {
       "script_id": "SET-006-V1",
-      "script_version": "Variation 1",
-      "hook_type": "Mistakes",
-      "format": "Listicle",
-      "original_slide_count": 5,
-      "final_slide_count": 6,
+      "script_version": "V1",
+      "status": "Ready",
+      "hook_type": "V1",
+      "format": "listicle",
+      "original_slide_count": 11,
+      "final_slide_count": 11,
       "slides": [
         {
           "slide_number": 1,
           "slide_label": "Slide 1",
           "is_metafi_slide": false,
-          "text": "‏٣ أخطاء في جدول الحديد تدمر ركضك وتخلي رجولك ثقيلة طول الأسبوع."
+          "text": "عندك نيل سبا؟\nهذي الأخطاء ممكن تقتل مشروعك"
         },
         {
           "slide_number": 2,
           "slide_label": "Slide 2",
           "is_metafi_slide": false,
-          "text": "‏أول غلط هو تكرار ‎Leg Day‎ قوي قبل أيام الـ ‎Speed Run‎ أو الـ ‎Long Run‎ بيوم، لأن هذا يخلي عضالتك مجهدة وما تقدر\n‏تجري صح."
+          "text": "احفظي المقطع\nبتحتاجينه"
         },
         {
           "slide_number": 3,
           "slide_label": "Slide 3",
           "is_metafi_slide": false,
-          "text": "‏الغلط الثاني هو كثرة التمارين والوصول للفشل العضلي بكل جولة برجلينك، والصح إنك تخلي طاقة بجسمك للركض ومناسب للتضخيم."
+          "text": "حساب الإنستقرام ما يشد\n\nالمشكلة:\nصور عشوائية وإضاءة ضعيفة\nوما فيه هوية\n\nالحل:\nوحدي شكل الحساب واستخدمي صور واضحة\nبإضاءة زينة\nونزلي قبل وبعد وفوائد وعروض"
         },
         {
           "slide_number": 4,
-          "slide_label": "Slide 4 — Metafi",
-          "is_metafi_slide": true,
-          "text": "4. برضو سو لك جدول حديد يتعدل حسب رياضاتك\nاستخدم هذا التطبيق"
+          "slide_label": "Slide 4",
+          "is_metafi_slide": false,
+          "text": "طريقة الحجز مو واضحة\n\nالمشكلة:\nالعميلة ما تعرف كيف تحجز\n\nالحل:\nحطي رابط واتساب وسوي هايلايت للحجز\nونزلي جدول المواعيد كل أسبوع"
         },
         {
           "slide_number": 5,
           "slide_label": "Slide 5",
           "is_metafi_slide": false,
-          "text": "‏الغلط الثالث هو اختيار تقسيمة حديد صعبة تنهك جسمك، والحل تعتمد على ‎Upper, Lower, Full Body‎ عشان توازن مجهودك."
+          "text": "ما تنشرين آراء العميلات\n\nالمشكلة:\nالعميلات الجدد ما يثقون\n\nالحل:\nانشري سكرينات الواتساب\nبالهايلايت والستوريات\nوغطي الأرقام"
         },
         {
           "slide_number": 6,
           "slide_label": "Slide 6",
           "is_metafi_slide": false,
-          "text": "‏رتب ركضك بين ‎Easy, Speed, Long Run‎، ووزع حديدك السبت ‎Upper‎، الاثنين ‎Lower‎، والخميس ‎Full Body‎ الفضل\n‏استشفاء."
+          "text": "الأسعار مو مبينة\n\nالمشكلة:\nالعميلة تنصدم وتفقد الثقة\n\nالحل:\nنزلي بوست للأسعار\nوسوي هايلايت فيه كل التفاصيل"
+        },
+        {
+          "slide_number": 7,
+          "slide_label": "Slide 7",
+          "is_metafi_slide": false,
+          "text": "ما توضحين النظافة\n\nالمشكلة:\nبعض البنات يترددون\n\nالحل:\nصوري التعقيم والقفازات\nوترتيب المكان بانتظام"
+        },
+        {
+          "slide_number": 8,
+          "slide_label": "Slide 8",
+          "is_metafi_slide": false,
+          "text": "تقدمين خدمات كثيرة\n\nالمشكلة:\nالهوية تضيع\n\nالحل:\nركزي على الأظافر\nأو الأظافر مع خدمة بسيطة\nوخلي هويتك واضحة بكل مكان"
+        },
+        {
+          "slide_number": 9,
+          "slide_label": "Slide 9",
+          "is_metafi_slide": false,
+          "text": "ما عندك قبل وبعد أو فيديوهات\n\nالمشكلة:\nالحساب بارد\n\nالحل:\nنزلي ريلز قبل وبعد\nولقطات أثناء الجلسة\nوتصوير قريب بإضاءة مرتبة"
+        },
+        {
+          "slide_number": 10,
+          "slide_label": "Slide 10",
+          "is_metafi_slide": false,
+          "text": "ما عندك عروض أو حافز للرجعة\n\nالمشكلة:\nما فيه سبب يخليهم يرجعون\n\nالحل:\nسوي عروض مؤقتة أو نظام ولاء\nمثلاً الجلسة الخامسة\nخصم ٢٠٪"
+        },
+        {
+          "slide_number": 11,
+          "slide_label": "Slide 11",
+          "is_metafi_slide": true,
+          "text": "الاهم من كذا تعرفين اسرار المشروع وطريقة البدء "
         }
       ]
     },
     {
       "script_id": "SET-006-V2",
-      "script_version": "Variation 2",
-      "hook_type": "Tips / Things",
-      "format": "Listicle",
-      "original_slide_count": 5,
-      "final_slide_count": 6,
+      "script_version": "V2",
+      "status": "Ready",
+      "hook_type": "V2",
+      "format": "listicle",
+      "original_slide_count": 11,
+      "final_slide_count": 11,
       "slides": [
         {
           "slide_number": 1,
           "slide_label": "Slide 1",
           "is_metafi_slide": false,
-          "text": "‏٣ نصايح تمنيت أعرفها تخليني أجمع بين الحديد والركض ٣ مرات بالأسبوع بدون إصابات."
+          "text": "مشروع النيل سبا ما يفشل صدفة\nغالباً بسبب هذي الأخطاء"
         },
         {
           "slide_number": 2,
           "slide_label": "Slide 2",
           "is_metafi_slide": false,
-          "text": "‏أول نصيحة هي تقسيم الحديد لثالثة أيام بس: يوم ‎Upper‎، ويوم ‎Lower‎، ويوم ‎Full Body‎ عشان يمدي عضالتك ترتاح وتتطور."
+          "text": "احفظي المقطع\nبتحتاجينه"
         },
         {
           "slide_number": 3,
           "slide_label": "Slide 3",
           "is_metafi_slide": false,
-          "text": "‏ثاني نصيحة هي تنظيم ركضك على ٣ أنواع مختلفة: جري خفيف ‎Easy‎، تمرين سرعة ‎Speed‎، وجري مسافات ‎Long Run.‎"
+          "text": "الإنستقرام ما يلفت\n\nالمشكلة:\nصور عشوائية وإضاءة ضعيفة\nوالحساب بدون هوية\n\nالحل:\nثبتي شكل الحساب واستخدمي صور واضحة\nبإضاءة زينة\nونزلي قبل وبعد وفوائد وعروض"
         },
         {
           "slide_number": 4,
-          "slide_label": "Slide 4 — Metafi",
-          "is_metafi_slide": true,
-          "text": "4. برضو سو لك جدول حديد يتعدل حسب رياضاتك\nاستخدم هذا التطبيق"
+          "slide_label": "Slide 4",
+          "is_metafi_slide": false,
+          "text": "الحجز مو واضح\n\nالمشكلة:\nالعميلة تحتار كيف تحجز\n\nالحل:\nحطي رابط واتساب وسوي هايلايت للحجز\nونزلي جدول المواعيد كل أسبوع"
         },
         {
           "slide_number": 5,
           "slide_label": "Slide 5",
           "is_metafi_slide": false,
-          "text": "‏ثالث نصيحة ال تكسر رجولك في الجيم وال تلعب للفشل العضلي الكامل بكل جلسة، خفف الحجم شوي وخلي عندك طاقة تجري فيها."
+          "text": "ما تعرضين تجارب العميلات\n\nالمشكلة:\nالعميلات الجدد ما يثقون\n\nالحل:\nانشري سكرينات الواتساب\nبالهايلايت والستوريات\nوغطي الأرقام"
         },
         {
           "slide_number": 6,
           "slide_label": "Slide 6",
           "is_metafi_slide": false,
-          "text": "‏المعادلة سهلة، وزع جدولك وخلي يوم الراحة بالنص، وبتشوف كيف هالنظام مناسب ج ًدا للتضخيم وزيادة اللياقة سوا."
+          "text": "الأسعار غير واضحة\n\nالمشكلة:\nالعميلة تنصدم وتفقد الثقة\n\nالحل:\nنزلي بوست واضح للأسعار\nوسوي هايلايت فيه كل التفاصيل"
+        },
+        {
+          "slide_number": 7,
+          "slide_label": "Slide 7",
+          "is_metafi_slide": false,
+          "text": "ما تورين نظافة المكان\n\nالمشكلة:\nبعض البنات يترددون\n\nالحل:\nصوري التعقيم والقفازات\nوترتيب المكان باستمرار"
+        },
+        {
+          "slide_number": 8,
+          "slide_label": "Slide 8",
+          "is_metafi_slide": false,
+          "text": "تحاولين تقدمين كل شيء\n\nالمشكلة:\nهويتك تضيع\n\nالحل:\nركزي على الأظافر\nأو الأظافر مع خدمة بسيطة\nوخلي هويتك واضحة بكل مكان"
+        },
+        {
+          "slide_number": 9,
+          "slide_label": "Slide 9",
+          "is_metafi_slide": false,
+          "text": "ما تنزلين قبل وبعد أو فيديوهات\n\nالمشكلة:\nالحساب يصير بارد\n\nالحل:\nنزلي ريلز قبل وبعد\nولقطات من الجلسة\nوتصوير قريب بإضاءة مرتبة"
+        },
+        {
+          "slide_number": 10,
+          "slide_label": "Slide 10",
+          "is_metafi_slide": false,
+          "text": "ما فيه عروض أو سبب للرجعة\n\nالمشكلة:\nما فيه شيء يخليهم يرجعون\n\nالحل:\nسوي عروض مؤقتة أو نظام ولاء\nمثلاً الجلسة الخامسة\nخصم ٢٠٪"
+        },
+        {
+          "slide_number": 11,
+          "slide_label": "Slide 11",
+          "is_metafi_slide": true,
+          "text": "الاهم من كذا تعرفين اسرار المشروع وطريقة البدء "
         }
       ]
     },
     {
       "script_id": "SET-006-V3",
-      "script_version": "Variation 3",
-      "hook_type": "How-to",
-      "format": "How-to / Framework",
-      "original_slide_count": 5,
-      "final_slide_count": 6,
+      "script_version": "V3",
+      "status": "Ready",
+      "hook_type": "V3",
+      "format": "listicle",
+      "original_slide_count": 11,
+      "final_slide_count": 11,
       "slides": [
         {
           "slide_number": 1,
           "slide_label": "Slide 1",
           "is_metafi_slide": false,
-          "text": "‏كيف تصمم جدول حديد ذكي يتناسب مع ركضك ٣ مرات بالأسبوع ويضمن لك تضخيم ممتاز؟"
+          "text": "إذا عندك نيل سبا\nلا تخلين هذي الأخطاء تخرب مشروعك"
         },
         {
           "slide_number": 2,
           "slide_label": "Slide 2",
           "is_metafi_slide": false,
-          "text": "‏الحل السحري هو تقسيمة حديد ٣ أيام بالاسبوع: يوم ‎Upper Body‎، يوم ‎Lower Body‎، ويوم ‎Full Body‎ لتمرين الجسم كامل."
+          "text": "احفظي المقطع\nبتحتاجينه"
         },
         {
           "slide_number": 3,
           "slide_label": "Slide 3",
           "is_metafi_slide": false,
-          "text": "‏وزع ركضك بذكاء لثالث حصص ‎Easy Run‎: لالستشفاء ‎Speed Run‎، للياقة، و ‎Long Run‎ لتحسين التحمل."
+          "text": "حسابك ما يجذب\n\nالمشكلة:\nصور عشوائية وإضاءة ضعيفة\nوما فيه هوية واضحة\n\nالحل:\nوحدي شكل الحساب واختاري صور واضحة\nبإضاءة زينة\nونزلي قبل وبعد وفوائد وعروض"
         },
         {
           "slide_number": 4,
-          "slide_label": "Slide 4 — Metafi",
-          "is_metafi_slide": true,
-          "text": "سو لك جدول حديد يتعدل حسب رياضاتك\nاستخدم هذا التطبيق"
+          "slide_label": "Slide 4",
+          "is_metafi_slide": false,
+          "text": "العميلة ما تعرف تحجز\n\nالمشكلة:\nما فيه طريقة حجز واضحة\n\nالحل:\nحطي رابط واتساب وسوي هايلايت للحجز\nونزلي جدول المواعيد كل أسبوع"
         },
         {
           "slide_number": 5,
           "slide_label": "Slide 5",
           "is_metafi_slide": false,
-          "text": "‏احرص إنك ما تلعب رجلين بقوة قبل حصة الجري الطويل أو السرعة بيوم، وخفف الشدة بتمارين الرجل لتوفير طاقتك."
+          "text": "ما تبينين آراء العميلات\n\nالمشكلة:\nالعميلات الجدد ما يثقون\n\nالحل:\nانشري سكرينات الواتساب\nبالهايلايت والستوريات\nوغطي الأرقام"
         },
         {
           "slide_number": 6,
           "slide_label": "Slide 6",
           "is_metafi_slide": false,
-          "text": "‏جرب هالترتيب: السبت علوي، الأحد جري خفيف، الاثنين سفلي، الثالثاء راحة، الأربعاء سرعة، الخميس جسم كامل، والجمعة جري\n‏طويل."
-        }
-      ]
-    },
-    {
-      "script_id": "SET-006-V4",
-      "script_version": "Variation 4",
-      "hook_type": "Identity Callout",
-      "format": "POV / Relatable Scenario",
-      "original_slide_count": 5,
-      "final_slide_count": 6,
-      "slides": [
-        {
-          "slide_number": 1,
-          "slide_label": "Slide 1",
-          "is_metafi_slide": false,
-          "text": "‏إذا أنت تركض ٣ مرات بالأسبوع وتلعب حديد بس تحس رجولك دايمًا ميتة، جدولك الحالي هو المشكلة."
+          "text": "العميلة ما تعرف الأسعار\n\nالمشكلة:\nتنصدم وتفقد الثقة\n\nالحل:\nنزلي بوست للأسعار\nوسوي هايلايت فيه كل التفاصيل"
         },
         {
-          "slide_number": 2,
-          "slide_label": "Slide 2",
+          "slide_number": 7,
+          "slide_label": "Slide 7",
           "is_metafi_slide": false,
-          "text": "‏لازم تفهم إن رجولك تحتاج استشفاء؛ عشان كذا أفضل تقسيمة حديد لك هي ‎Upper, Lower, Full Body‎ عشان تعطيها فرصة\n‏ترتاح."
+          "text": "ما تبينين مستوى النظافة\n\nالمشكلة:\nبعض البنات يترددون\n\nالحل:\nصوري التعقيم والقفازات\nوترتيب المكان بشكل مستمر"
         },
         {
-          "slide_number": 3,
-          "slide_label": "Slide 3",
+          "slide_number": 8,
+          "slide_label": "Slide 8",
           "is_metafi_slide": false,
-          "text": "‏وزع ركضك على حصص متنوعة بين ‎Easy Run‎ و ‎Speed Run‎ و ‎Long Run‎ عشان تطور لياقتك صح."
+          "text": "تجمعين كل الخدمات\n\nالمشكلة:\nهوية مشروعك تضيع\n\nالحل:\nركزي على الأظافر\nأو الأظافر مع خدمة بسيطة\nوخلي هويتك واضحة بكل مكان"
         },
         {
-          "slide_number": 4,
-          "slide_label": "Slide 4 — Metafi",
+          "slide_number": 9,
+          "slide_label": "Slide 9",
+          "is_metafi_slide": false,
+          "text": "ما عندك محتوى قبل وبعد\n\nالمشكلة:\nالحساب يصير بارد\n\nالحل:\nنزلي ريلز قبل وبعد\nولقطات أثناء الجلسة\nوتصوير قريب بإضاءة مرتبة"
+        },
+        {
+          "slide_number": 10,
+          "slide_label": "Slide 10",
+          "is_metafi_slide": false,
+          "text": "ما تعطينهم سبب يرجعون\n\nالمشكلة:\nما فيه حافز للزيارة الثانية\n\nالحل:\nسوي عروض مؤقتة أو نظام ولاء\nمثلاً الجلسة الخامسة\nخصم ٢٠٪"
+        },
+        {
+          "slide_number": 11,
+          "slide_label": "Slide 11",
           "is_metafi_slide": true,
-          "text": "برضو سو لك جدول حديد يتعدل حسب رياضاتك\nاستخدم هذا التطبيق"
-        },
-        {
-          "slide_number": 5,
-          "slide_label": "Slide 5",
-          "is_metafi_slide": false,
-          "text": "‏انتبه تلعب ‎Leg Day‎ قاسي وتوصل للفشل العضلي قبل أيام الركض الطويل أو تمرين السرعة بيوم، لأنك كذا تدمر عضالتك."
-        },
-        {
-          "slide_number": 6,
-          "slide_label": "Slide 6",
-          "is_metafi_slide": false,
-          "text": "‏النظام هذا مريح، وبيعطيك طاقة تجري وبنفس الوقت مناسب للتضخيم وبناء عضالت قوية."
-        }
-      ]
-    },
-    {
-      "script_id": "SET-006-V5",
-      "script_version": "Variation 5",
-      "hook_type": "Contrarian / Warning",
-      "format": "Myth / Contrarian",
-      "original_slide_count": 5,
-      "final_slide_count": 6,
-      "slides": [
-        {
-          "slide_number": 1,
-          "slide_label": "Slide 1",
-          "is_metafi_slide": false,
-          "text": "‏الجمع بين الحديد والركض ٣ مرات بالأسبوع ما يحتاج تمرين حديد يومي، يحتاج تقسيم ذكي يحمي رجولك."
-        },
-        {
-          "slide_number": 2,
-          "slide_label": "Slide 2",
-          "is_metafi_slide": false,
-          "text": "‏وقف تمرين الحديد التقليدي الـ ٥ أيام، واعتمد نظام الـ ٣ أيام، ‎Upper Body‎: ثم ‎Lower Body‎، وأخيرً ا ‎Full Body.‎"
-        },
-        {
-          "slide_number": 3,
-          "slide_label": "Slide 3",
-          "is_metafi_slide": false,
-          "text": "‏السر إنك ما ترهق رجولك في الجيم، ال تلعب تمارين كثيرة للرجل وال توصل للفشل العضلي عشان تخلي طاقة للركض."
-        },
-        {
-          "slide_number": 4,
-          "slide_label": "Slide 4 — Metafi",
-          "is_metafi_slide": true,
-          "text": "سو لك جدول حديد يتعدل حسب رياضاتك\nاستخدم هذا التطبيق"
-        },
-        {
-          "slide_number": 5,
-          "slide_label": "Slide 5",
-          "is_metafi_slide": false,
-          "text": "‏نوع ركضك بين جري خفيف وجري سرعات وجري مسافات، وابعد الـ ‎Leg Day‎ تمامًا عن الأيام القوية للركض."
-        },
-        {
-          "slide_number": 6,
-          "slide_label": "Slide 6",
-          "is_metafi_slide": false,
-          "text": "‏بهالطريقة بتضمن إنك تتمرن بذكاء، وتحافظ على طاقتك لركض قوي وبناء عضلي ممتاز للتضخيم."
-        }
-      ]
-    },
-    {
-      "script_id": "SET-006-V6",
-      "script_version": "Variation 6",
-      "hook_type": "Story / Regret / Realization",
-      "format": "Story",
-      "original_slide_count": 5,
-      "final_slide_count": 6,
-      "slides": [
-        {
-          "slide_number": 1,
-          "slide_label": "Slide 1",
-          "is_metafi_slide": false,
-          "text": "‏كنت أحاول أركض ٣ مرات بالأسبوع والعب حديد ٥ أيام، لين انعدمت رجولي ووقف تطوري تمامًا."
-        },
-        {
-          "slide_number": 2,
-          "slide_label": "Slide 2",
-          "is_metafi_slide": false,
-          "text": "‏اللي أنقذني هو تغيير تقسيمة الحديد لـ ٣ أيام بس بالأسبوع: يوم علوي، يوم سفلي، ويوم جسم كامل لراحة أكبر."
-        },
-        {
-          "slide_number": 3,
-          "slide_label": "Slide 3",
-          "is_metafi_slide": false,
-          "text": "‏وقتها رتبت ركضي ليكون متنوع بين ‎Easy Run‎ وجري سرعة ‎Speed Run‎ وجري مسافات ‎Long Run.‎"
-        },
-        {
-          "slide_number": 4,
-          "slide_label": "Slide 4 — Metafi",
-          "is_metafi_slide": true,
-          "text": "برضو سو لك جدول حديد يتعدل حسب رياضاتك\nاستخدم هذا التطبيق"
-        },
-        {
-          "slide_number": 5,
-          "slide_label": "Slide 5",
-          "is_metafi_slide": false,
-          "text": "‏تعلمت ما ألعب رجلين للفشل العضلي وال أرهقها قبل تمرين ركض قوي بيوم، وصارت طاقتي دبل في الجري."
-        },
-        {
-          "slide_number": 6,
-          "slide_label": "Slide 6",
-          "is_metafi_slide": false,
-          "text": "‏الحين استشفائي صار ممتاز، وصار جسمي يبني عضل بشكل رهيب والنظام طلع مناسب ج ًدا للتضخيم."
-        }
-      ]
-    },
-    {
-      "script_id": "SET-006-V7",
-      "script_version": "Variation 7",
-      "hook_type": "POV / Question",
-      "format": "POV / Relatable Scenario",
-      "original_slide_count": 5,
-      "final_slide_count": 6,
-      "slides": [
-        {
-          "slide_number": 1,
-          "slide_label": "Slide 1",
-          "is_metafi_slide": false,
-          "text": "‏كيف تجمع بين الركض ٣ مرات بالأسبوع والحديد بدون ما تضحي بحجم عضالتك أو لياقتك؟"
-        },
-        {
-          "slide_number": 2,
-          "slide_label": "Slide 2",
-          "is_metafi_slide": false,
-          "text": "‏الجواب في تنظيم أسبوعك بمرونة؛ العب حديد ٣ أيام بس بنظام ‎Upper, Lower, Full Body‎ عشان تتفادى إجهاد رجولك."
-        },
-        {
-          "slide_number": 3,
-          "slide_label": "Slide 3",
-          "is_metafi_slide": false,
-          "text": "‏وخل ركضك متنوع وموزع بذكاء بين الجري الخفيف، وتمرين السرعة، والركض الطويل لتحسين كفاءة قلبك."
-        },
-        {
-          "slide_number": 4,
-          "slide_label": "Slide 4 — Metafi",
-          "is_metafi_slide": true,
-          "text": "برضو سو لك جدول حديد يتعدل حسب رياضاتك\nاستخدم هذا التطبيق"
-        },
-        {
-          "slide_number": 5,
-          "slide_label": "Slide 5",
-          "is_metafi_slide": false,
-          "text": "‏ال تضغط على رجولك في الجيم بتمارين كثيرة، وتجنب الـ ‎Leg Day‎ القوي قبل أيام الركض الأساسية عشان تحافظ على مفاصلك."
-        },
-        {
-          "slide_number": 6,
-          "slide_label": "Slide 6",
-          "is_metafi_slide": false,
-          "text": "‏الترتيب هذا هو أفضل وسيلة تضمن لك تضخيم وبناء عضالت مع لياقة جري خرافية بنفس الوقت."
+          "text": "الاهم من كذا تعرفين اسرار المشروع وطريقة البدء "
         }
       ]
     }

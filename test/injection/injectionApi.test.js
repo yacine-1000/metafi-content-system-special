@@ -19,7 +19,7 @@ function hash(filePath) {
 
 function input(libraryDir) {
   const set = JSON.parse(fs.readFileSync(path.join(libraryDir, 'source-sets', 'SET-001.json'), 'utf8'));
-  return { pillar: set.pillar, subtopic: set.subtopic, topic: 'API injection fixture', scripts: set.scripts.slice(0, 2).map(({ script_id, ...script }) => script) };
+  return { pillar: set.pillar, pillar_name: set.pillar_name, subtopic: set.subtopic, topic: 'API injection fixture', scripts: set.scripts.slice(0, 2).map(({ script_id, ...script }) => script) };
 }
 
 function responseCapture() {
@@ -45,15 +45,15 @@ test('Injection API creates a valid set and clearly rejects invalid taxonomy and
   const taxonomy = responseCapture();
   await handlers.taxonomy({}, taxonomy);
   assert.ok(taxonomy.body.pillars.length > 0);
-  const changedWeek = taxonomy.body.subtopics.filter((item) => item.pillar === 'Changed Week / What Should I Train Today?').map((item) => item.subtopic);
-  assert.deepEqual(changedWeek, ['Weekly Activity Adaptation', 'Daily Training Decision', 'Training Load', 'Personalized Plan', 'Sport Logging', 'Recovery Decision']);
-  assert.equal(taxonomy.body.subtopics.some((item) => item.pillar === 'Changed Week / What Should I Train Today?' && item.subtopic === 'Hybrid Athlete'), false);
+  const p1Subtopics = taxonomy.body.subtopics.filter((item) => item.pillar === 'P1').map((item) => item.subtopic);
+  assert.deepEqual(p1Subtopics, ['Starting a Nail Spa']);
+  assert.equal(taxonomy.body.subtopics.some((item) => item.pillar === 'P1' && item.subtopic === 'Hybrid Athlete'), false);
   const created = responseCapture();
   handlers.createSourceSet({ body: input(libraryDir) }, created);
   assert.equal(created.statusCode, 201);
-  assert.equal(created.body.source_set.source_set_id, 'SET-045');
+  assert.equal(created.body.source_set.source_set_id, 'SET-012');
   assert.equal(hash(existingPath), existingHash);
-  assert.ok(fs.existsSync(path.join(libraryDir, 'source-sets', 'SET-045.json')));
+  assert.ok(fs.existsSync(path.join(libraryDir, 'source-sets', 'SET-012.json')));
   assert.equal(fs.existsSync(requestPath), false);
 
   const badTaxonomy = input(libraryDir);
@@ -63,11 +63,11 @@ test('Injection API creates a valid set and clearly rejects invalid taxonomy and
   assert.equal(taxonomyFailure.statusCode, 400);
   assert.match(taxonomyFailure.body.error, /Unknown pillar/);
   const badSlides = input(libraryDir);
-  badSlides.scripts[0].slides[3].slide_label = 'Slide 4';
+  badSlides.scripts[0].slides.at(-1).is_metafi_slide = false;
   const slideFailure = responseCapture();
   handlers.createSourceSet({ body: badSlides }, slideFailure);
   assert.equal(slideFailure.statusCode, 400);
-  assert.match(slideFailure.body.error, /Metafi/);
+  assert.match(slideFailure.body.error, /final CTA slide/);
 
   const request = responseCapture();
   handlers.createCampaignRequest({ body: { source_set_id: 'SET-001', campaign_id: campaign.campaign_id, target_date: '2026-07-22' } }, request);

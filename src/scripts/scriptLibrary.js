@@ -9,10 +9,10 @@ const LIBRARY_DIR = path.join(ROOT, 'content', 'script-library');
 const INDEX_PATH = path.join(LIBRARY_DIR, 'index.json');
 const SOURCE_SET_ID_PATTERN = /^SET-\d{3,}$/;
 const PILLAR_NAMES = Object.freeze({
-  p1: 'Changed Week / What Should I Train Today?',
-  p2: 'Hybrid Athlete / Sport + Gym Balance',
-  p3: 'Workout Programming / Exercise Selection',
-  p4: 'Body Transformation / Aesthetic Progress',
+  p1: 'P1',
+  p2: 'P2',
+  p3: 'P3',
+  p4: 'P4',
 });
 const PILLAR_IDS = Object.freeze(Object.fromEntries(Object.entries(PILLAR_NAMES).map(([id, name]) => [name, id])));
 let indexCache = null;
@@ -70,15 +70,18 @@ function findSourceSets({ pillar, subtopic, hook_type: hookType } = {}) {
 
 function adaptArabicScript(sourceSet, entry, { hookType, visualHookType }) {
   if (!sourceSet || !entry || !Array.isArray(entry.slides)) throw new Error('Arabic Script Library entry is invalid');
+  const ctaSourceSlide = entry.slides[entry.slides.length - 1];
+  if (!ctaSourceSlide) throw new Error(`Arabic Script Library entry ${entry.script_id} has no slides`);
+  const ctaSlideNumber = ctaSourceSlide.slide_number;
   const slides = entry.slides.map((slide) => ({
     slide_number: slide.slide_number,
-    role: slide.slide_number === 1 ? 'hook' : slide.slide_number === 4 ? 'app' : 'body',
-    asset_bank: slide.slide_number === 1 ? 'visual_hooks' : slide.slide_number === 4 ? 'app_icon_home_screen' : 'body_slides',
+    role: slide.slide_number === 1 ? 'hook' : slide.slide_number === ctaSlideNumber ? 'app' : 'body',
+    asset_bank: slide.slide_number === 1 ? 'visual_hooks' : slide.slide_number === ctaSlideNumber ? 'app_icon_home_screen' : 'body_slides',
     text: slide.text,
   }));
   const hookSlide = slides.find((slide) => slide.slide_number === 1);
-  const appSlide = slides.find((slide) => slide.slide_number === 4);
-  if (!hookSlide || !appSlide) throw new Error(`Arabic Script Library entry ${entry.script_id} must contain slides 1 and 4`);
+  const appSlide = slides.find((slide) => slide.slide_number === ctaSlideNumber);
+  if (!hookSlide || !appSlide) throw new Error(`Arabic Script Library entry ${entry.script_id} must contain a hook and CTA`);
   return {
     topic: {
       id: sourceSet.source_set_id,
@@ -91,7 +94,7 @@ function adaptArabicScript(sourceSet, entry, { hookType, visualHookType }) {
       hook_type: hookType,
       visual_hook_type: visualHookType,
       slide_count: entry.final_slide_count,
-      cta_slide: 4,
+      cta_slide: ctaSlideNumber,
       language: 'ar',
       versions: {
         ar: {
