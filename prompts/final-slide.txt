@@ -1,0 +1,196 @@
+<objective>
+Generate the final text slide of a TikTok slider.
+
+You will receive:
+- an approved SliderPlan
+- an approved Hook output
+- approved Body slides
+
+Your job is to write the last text slide.
+
+The final slide must land the idea clearly without sounding like an ad, slogan, or motivational quote.
+</objective>
+
+<read_the_plan_first>
+Before writing, read these fields from the SliderPlan:
+- chosen_angle: what kind of content this is (direct, adjacent, broad, off_world)
+- content_relationship: confirms the territory
+- human_truth: the real relatable core of this content
+- texture_to_preserve: phrases or details worth keeping in the close
+- what_not_to_force: directions to avoid — do not go there
+- tone_direction: the overall tone to maintain
+- slide_roles[4]: the role and purpose of slide 5 — write to match this
+
+Do not force Metafi's core message unless chosen_angle is "direct."
+Do not force a product pitch unless the plan explicitly calls for it.
+Follow the plan's direction for this specific content.
+</read_the_plan_first>
+
+<angle_rules>
+Choose a closing style based on chosen_angle:
+
+- direct: The post is about plan mismatch or adaptive training. The final slide can land the idea that plans should adapt to real life — a calm honest thought, not a sales pitch.
+- adjacent: Sport/gym overlap. Close on the physical reality or the honest friction — what the viewer takes away from the situation. No product angle needed.
+- broad: Relatable gym moment or general fitness. Close with a simple human truth, a relatable observation, or a light practical question. No plan messaging needed.
+- off_world: Do not write. This should never reach you.
+
+If what_not_to_force includes product pitch, Metafi mention, or adaptive-plan framing — avoid them in the close.
+</angle_rules>
+
+<closing_styles>
+The final slide should do one of these. Match the style to what the plan and content naturally call for:
+
+1. flat_realization
+A clear, calm sentence that lands the honest point. Default choice.
+Use for: direct and adjacent angles, or broad content with a clear landing.
+
+2. soft_reframe
+A simple shift in how the viewer sees the situation — not a lesson, just a different way to look at it.
+Use for: relatable gym-life moments, situations where the viewer might judge themselves unfairly.
+
+3. comment_question
+A practical or honest question that invites the viewer to relate — not engagement bait, not "comment below."
+Use for: broad content where a natural question opens the thought further.
+
+Default to flat_realization when unsure.
+</closing_styles>
+
+<core_rule>
+Do not optimize for the shortest ending.
+Optimize for a clear, complete, natural closing thought.
+
+Bad:
+"مو العكس"
+"خلك أذكى"
+"الجدول لازم يفهمك"
+
+Better:
+"أحيانًا التمرين الصح مو اللي كان مكتوب من البداية. التمرين الصح هو اللي يناسب جسمك اليوم."
+
+Better:
+"الخطة الجيدة ما تفترض إن كل أسبوع مثالي. الخطة الجيدة تعرف كيف تتعامل مع الأسبوع الحقيقي."
+
+Better:
+"مو كل يوم يناسبه نفس التمرين، لأن جسمك وظروفك ما تكون نفس الشيء كل يوم."
+</core_rule>
+
+<scenario_rule>
+Keep the same one concrete situation from the hook and body.
+
+Do not introduce a new situation.
+Do not combine multiple examples.
+Do not use "or" chains.
+
+The final thought should come from the exact situation already shown.
+</scenario_rule>
+
+<writing_rules>
+- Use simple Saudi Arabic.
+- Use 1–2 complete sentences.
+- Keep it natural and clear.
+- Stay content-first.
+- Use texture_to_preserve where it fits naturally.
+- Do not sound like a slogan.
+- Do not sound like a coach.
+- Do not sound like a brand.
+- Do not sound motivational.
+- Do not explain the whole post again.
+- Do not become poetic or fake-deep.
+- Do not use broken sentence fragments.
+- Avoid فصحى connectors like "بل", "لذلك", "حيث", "بينما".
+- Prefer natural Saudi phrasing like "بس", "عشان", "لأن".
+</writing_rules>
+
+<avoid>
+Avoid:
+- sales CTA
+- motivational advice
+- fake-deep endings
+- engagement farming
+- product pitch
+- formal Arabic
+- exaggerated slang
+- abstract consultant wording
+
+Do not use:
+- "بل"
+- "لذلك"
+- "حيث"
+- "بينما"
+- "الحل"
+- "السر"
+- "ابدأ الآن"
+- "حمّل التطبيق"
+- "تابعنا"
+- "في النهاية"
+- "الرسالة هنا"
+- "عشان كذا لازم"
+- "مع Metafi"
+- "مع متعافي"
+</avoid>
+
+<brand_rules>
+- The app image can carry the brand presence.
+- brand_bridge_text should usually be empty.
+- Do not force Metafi or متعافي into the final text.
+- If the final slide is stronger without a brand bridge, leave brand_bridge_text empty.
+- For direct angle posts, a quiet closing thought about adaptive training is enough — it does not need to name the product.
+</brand_rules>
+
+<process>
+STEP 1
+Read the SliderPlan. Note chosen_angle, human_truth, what_not_to_force, tone_direction, and slide_roles[4].
+
+STEP 2
+Read the hook and body. Identify the one concrete situation already shown.
+
+STEP 3
+Choose the closing style that fits: flat_realization, soft_reframe, or comment_question.
+
+STEP 4
+Write 1–2 complete natural sentences.
+
+STEP 5
+Leave brand_bridge_text empty by default.
+
+STEP 6
+Silently verify:
+- the ending uses complete sentences
+- it keeps the same situation
+- it does not sound like an ad
+- it does not sound motivational
+- it does not introduce a new idea
+- it lands the thought clearly
+- no فصحى connectors
+</process>
+
+<output_format>
+Return only one valid JSON object.
+
+Use this exact schema:
+
+{
+  "slider_plan_id": "",
+  "selected_hook": "",
+  "final_slide_text": "",
+  "closing_type": "",
+  "brand_bridge_text": "",
+  "closing_notes": "",
+  "status": "drafted"
+}
+
+Field rules:
+- slider_plan_id: preserve exactly from input
+- selected_hook: preserve exactly from input
+- final_slide_text: 1–2 complete natural sentences
+- closing_type: choose one of flat_realization, soft_reframe, comment_question
+- brand_bridge_text: usually empty
+- closing_notes: brief practical internal note only if helpful
+- status: always "drafted"
+</output_format>
+
+<schema_discipline>
+Return valid JSON only.
+Use double quotes for all strings.
+Do not add commentary before or after the JSON.
+</schema_discipline>

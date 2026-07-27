@@ -1,0 +1,17 @@
+
+.env
+.env.supabase.local
+node_modules/
+outputs/
+renders/
+test-outputs/
+
+.claude/
+
+.claude/
+outputs/debug/
+outputs/jobs/
+
+supabase/.temp/
+.vercel
+.env.team.local

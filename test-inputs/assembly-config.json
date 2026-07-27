@@ -1,0 +1,29 @@
+{
+  "slides": [
+    {
+      "slide_number": 1,
+      "image_path": "assets/hook-images/hook-01.png",
+      "text": "تتمرن وأنت عارف إنك ما نمت زين، أو توك راجع من سفر، بس لازم 'تخلص التمرين'."
+    },
+    {
+      "slide_number": 2,
+      "image_path": "assets/body-images/body-01.jpg",
+      "text": "وتحس إنك لو ما سويته، كأنك ضيعت اليوم كله، أو خربت الجدول اللي بنيته."
+    },
+    {
+      "slide_number": 3,
+      "image_path": "assets/body-images/body-02.jpg",
+      "text": "تتمرن وأنت عارف إن جسمك مو في أحسن حالاته، بس الجدول يقول لك 'لازم كذا'."
+    },
+    {
+      "slide_number": 4,
+      "image_path": "assets/body-images/body-03.jpg",
+      "text": "تصير تحس إنك قاعد تحارب جسمك عشان ترضي جدول، مو عشان تتطور."
+    },
+    {
+      "slide_number": 5,
+      "image_path": "assets/final-slide-images/final-01.png",
+      "text": "المفروض خطتك تمشي مع حياتك، مو العكس."
+    }
+  ]
+}

@@ -1,0 +1,452 @@
+{
+  "version": "v1",
+  "model": "pillar_topic_master_scripts",
+  "topics_by_pillar": {
+    "p2": [
+      {
+        "id": "p2_becoming_hybrid_athlete",
+        "pillar_id": "p2",
+        "topic_name": "Becoming a Hybrid Athlete",
+        "topic_name_ar": "كيف تصير Hybrid Athlete",
+        "active": true,
+        "master_scripts": [
+          {
+            "id": "p2_hybrid_athlete_listicle_001",
+            "master_script_id": "p2_hybrid_athlete_listicle_001",
+            "active": true,
+            "hook_type": "listicle",
+            "visual_hook_type": "physique_proof",
+            "slide_count": 8,
+            "cta_slide": 4,
+            "versions": {
+              "ar": {
+                "hook_text": "٧ أشياء تخليك تصير Hybrid Athlete تمنيت عرفتها بدري",
+                "slides": [
+                  {
+                    "slide_number": 1,
+                    "role": "hook",
+                    "asset_bank": "visual_hooks",
+                    "text": "٧ أشياء تخليك تصير\nHybrid Athlete\nتمنيت عرفتها بدري"
+                  },
+                  {
+                    "slide_number": 2,
+                    "role": "body",
+                    "asset_bank": "body_slides",
+                    "text": "١. تمرن بذكاء، مو بس بحماس\nابدأ بالحديد وبعدها الكارديو\nلا تخلي الجري يخرب تمرينك\nولا الحديد يخلي لياقتك صفر"
+                  },
+                  {
+                    "slide_number": 3,
+                    "role": "body",
+                    "asset_bank": "body_slides",
+                    "text": "٢. كل كأنك تتمرن فعلًا\nلا تخاف من الكارب\nوخذ بروتينك بشكل كافي\nالأكل هو اللي يشغلك"
+                  },
+                  {
+                    "slide_number": 4,
+                    "role": "cta",
+                    "asset_bank": "app_icon_home_screen",
+                    "text": "٣. سو جدول حديد يتعدل حسب\nأسبوعك ورياضتك\nاستخدم هذا"
+                  },
+                  {
+                    "slide_number": 5,
+                    "role": "body",
+                    "asset_bank": "body_slides",
+                    "text": "٤. سجّل كل شي\nأوزانك في النادي\nوركضاتك برا النادي\nلأنك إذا ما تتابع تقدمك\nبتقعد تتمرن بشكل عشوائي"
+                  },
+                  {
+                    "slide_number": 6,
+                    "role": "body",
+                    "asset_bank": "body_slides",
+                    "text": "٥. طور تنفسك\nحاول تركز على Zone 2\nمو تمرين ممل وخلاص\nهذا اللي يخلي تنفسك يتحمل لفترة أطول\nويخليك ترجع أقوى حتى في تمارين الحديد"
+                  },
+                  {
+                    "slide_number": 7,
+                    "role": "body",
+                    "asset_bank": "body_slides",
+                    "text": "٦. اشتغل على اللي ناقصك\nنفسك يتعب بسرعة؟\nزود ركضاتك\nلياقتك ممتازة بس جسمك ضعيف؟\nشد حيلك بالحديد"
+                  },
+                  {
+                    "slide_number": 8,
+                    "role": "body",
+                    "asset_bank": "body_slides",
+                    "text": "٧. لا تستهين بالنوم\nنام زين\nوخفف التمرين كل فترة\nجسمك ما يتحسن لما تستهلكه\nيتحسن لما تعطيه فرصة يتشافى"
+                  }
+                ]
+              },
+              "en": {
+                "hook_text": "7 things that’ll make you a better Hybrid Athlete wish I knew these sooner",
+                "slides": [
+                  {
+                    "slide_number": 1,
+                    "role": "hook",
+                    "asset_bank": "visual_hooks",
+                    "text": "7 things that’ll make you a better\nHybrid Athlete\nwish I knew these sooner"
+                  },
+                  {
+                    "slide_number": 2,
+                    "role": "body",
+                    "asset_bank": "body_slides",
+                    "text": "1. Train smart, not just hard\nLift first, then do cardio\ndon’t let running ruin your strength\nor lifting kill your fitness"
+                  },
+                  {
+                    "slide_number": 3,
+                    "role": "body",
+                    "asset_bank": "body_slides",
+                    "text": "2. Eat like you actually train\nDon’t be scared of carbs\nand get enough protein\nfood is what keeps you going"
+                  },
+                  {
+                    "slide_number": 4,
+                    "role": "cta",
+                    "asset_bank": "app_icon_home_screen",
+                    "text": "3. Build a lifting plan that adjusts\nto your week and your sport\nuse this app"
+                  },
+                  {
+                    "slide_number": 5,
+                    "role": "body",
+                    "asset_bank": "body_slides",
+                    "text": "4. Track everything\nYour lifts in the gym\nand your runs outside\nif you don’t track your progress\nyou’re just guessing"
+                  },
+                  {
+                    "slide_number": 6,
+                    "role": "body",
+                    "asset_bank": "body_slides",
+                    "text": "5. Build your engine\nFocus on Zone 2\nit’s not just boring cardio\nit helps you last longer\nand recover better for lifting"
+                  },
+                  {
+                    "slide_number": 7,
+                    "role": "body",
+                    "asset_bank": "body_slides",
+                    "text": "6. Work on what you’re missing\nGet tired too quickly?\nRun more\nGreat cardio but still weak?\nLift harder"
+                  },
+                  {
+                    "slide_number": 8,
+                    "role": "body",
+                    "asset_bank": "body_slides",
+                    "text": "7. Don’t sleep on recovery\nSleep well\nand take easier weeks sometimes\nyour body doesn’t improve when you run it down\nit improves when you let it recover"
+                  }
+                ]
+              },
+              "es": {
+                "hook_text": "7 cosas que te convertirán en un mejor Hybrid Athlete ojalá las hubiera sabido antes",
+                "slides": [
+                  {
+                    "slide_number": 1,
+                    "role": "hook",
+                    "asset_bank": "visual_hooks",
+                    "text": "7 cosas que te convertirán en un mejor\nHybrid Athlete\nojalá las hubiera sabido antes"
+                  },
+                  {
+                    "slide_number": 2,
+                    "role": "body",
+                    "asset_bank": "body_slides",
+                    "text": "1. Entrena con cabeza, no solo con ganas\nPrimero pesas, luego cardio\nno dejes que correr arruine tu fuerza\nni que las pesas maten tu condición física"
+                  },
+                  {
+                    "slide_number": 3,
+                    "role": "body",
+                    "asset_bank": "body_slides",
+                    "text": "2. Come como alguien que de verdad entrena\nNo le tengas miedo a los carbohidratos\ny consume suficiente proteína\nla comida es lo que te hace rendir"
+                  },
+                  {
+                    "slide_number": 4,
+                    "role": "cta",
+                    "asset_bank": "app_icon_home_screen",
+                    "text": "3. Ten un plan de pesas que se adapte\na tu semana y a tu deporte\nusa esta app"
+                  },
+                  {
+                    "slide_number": 5,
+                    "role": "body",
+                    "asset_bank": "body_slides",
+                    "text": "4. Registra todo\nTus pesos en el gimnasio\ny tus carreras fuera\nsi no mides tu progreso\nsolo estás adivinando"
+                  },
+                  {
+                    "slide_number": 6,
+                    "role": "body",
+                    "asset_bank": "body_slides",
+                    "text": "5. Mejora tu motor\nEnfócate en Zone 2\nno es solo cardio aburrido\nte ayuda a aguantar más\ny a recuperarte mejor para las pesas"
+                  },
+                  {
+                    "slide_number": 7,
+                    "role": "body",
+                    "asset_bank": "body_slides",
+                    "text": "6. Trabaja en lo que te falta\n¿Te cansas muy rápido?\nCorre más\n¿Tienes buen cardio pero te falta fuerza?\nLevanta más pesado"
+                  },
+                  {
+                    "slide_number": 8,
+                    "role": "body",
+                    "asset_bank": "body_slides",
+                    "text": "7. No subestimes la recuperación\nDuerme bien\ny baja el ritmo algunas semanas\ntu cuerpo no mejora cuando lo revientas\nmejora cuando le das tiempo para recuperarse"
+                  }
+                ]
+              },
+              "fr": {
+                "hook_text": "7 choses qui feront de toi un meilleur Hybrid Athlete j'aurais aimé les connaître plus tôt",
+                "slides": [
+                  {
+                    "slide_number": 1,
+                    "role": "hook",
+                    "asset_bank": "visual_hooks",
+                    "text": "7 choses qui feront de toi un meilleur\nHybrid Athlete\nj'aurais aimé les connaître plus tôt"
+                  },
+                  {
+                    "slide_number": 2,
+                    "role": "body",
+                    "asset_bank": "body_slides",
+                    "text": "1. Entraîne-toi intelligemment, pas juste plus dur\nCommence par les poids, puis fais ton cardio\nne laisse pas la course ruiner ta force\nni les poids ruiner ton cardio"
+                  },
+                  {
+                    "slide_number": 3,
+                    "role": "body",
+                    "asset_bank": "body_slides",
+                    "text": "2. Mange comme quelqu'un qui s'entraîne vraiment\nN'aie pas peur des glucides\net mange assez de protéines\nc'est la nourriture qui te fait performer"
+                  },
+                  {
+                    "slide_number": 4,
+                    "role": "cta",
+                    "asset_bank": "app_icon_home_screen",
+                    "text": "3. Fais un programme de musculation\nqui s'adapte à ta semaine et à ton sport\nutilise cette appli"
+                  },
+                  {
+                    "slide_number": 5,
+                    "role": "body",
+                    "asset_bank": "body_slides",
+                    "text": "4. Suis tout ce que tu fais\nTes charges à la salle\net tes runs à l'extérieur\nsi tu ne suis pas tes progrès\ntu avances au hasard"
+                  },
+                  {
+                    "slide_number": 6,
+                    "role": "body",
+                    "asset_bank": "body_slides",
+                    "text": "5. Développe ton endurance\nConcentre-toi sur la Zone 2\nce n'est pas juste du cardio ennuyeux\nça t'aide à tenir plus longtemps\net à mieux récupérer pour la musculation"
+                  },
+                  {
+                    "slide_number": 7,
+                    "role": "body",
+                    "asset_bank": "body_slides",
+                    "text": "6. Travaille tes points faibles\nTu t'essouffles trop vite ?\nCours plus\nBon cardio mais pas assez de force ?\nSoulève plus lourd"
+                  },
+                  {
+                    "slide_number": 8,
+                    "role": "body",
+                    "asset_bank": "body_slides",
+                    "text": "7. Ne néglige pas la récupération\nDors bien\net prévois des semaines plus légères de temps en temps\nton corps ne progresse pas quand tu le détruis\nil progresse quand tu le laisses récupérer"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "p1": [],
+    "p3": [
+      {
+        "id": "p3_best_exercises_by_muscle",
+        "pillar_id": "p3",
+        "topic_name": "Best exercise selection by muscle group",
+        "topic_name_ar": "أفضل التمارين لكل عضلة",
+        "active": true,
+        "master_scripts": [
+          {
+            "id": "p3_biceps_listicle_001",
+            "master_script_id": "p3_biceps_listicle_001",
+            "active": true,
+            "hook_type": "listicle",
+            "visual_hook_type": "physique_proof",
+            "slide_count": 7,
+            "cta_slide": 4,
+            "versions": {
+              "ar": {
+                "hook_text": "٥ تمارين تخلي حجم البايسبس أكبر من رأسك",
+                "slides": [
+                  {
+                    "slide_number": 1,
+                    "role": "hook",
+                    "asset_bank": "visual_hooks",
+                    "text": "٥ تمارين تخلي حجم البايسبس أكبر\nمن رأسك"
+                  },
+                  {
+                    "slide_number": 2,
+                    "role": "body",
+                    "asset_bank": "body_slides",
+                    "text": "Dumbbell curl\n1/10\nعادي جدًا وفيه أقوى منه"
+                  },
+                  {
+                    "slide_number": 3,
+                    "role": "body",
+                    "asset_bank": "body_slides",
+                    "text": "Hammer curl\n4/10\nمو سيء"
+                  },
+                  {
+                    "slide_number": 4,
+                    "role": "cta",
+                    "asset_bank": "app_icon_home_screen",
+                    "text": "سجل أوزانك عشان تتطور\nاستخدم هذا"
+                  },
+                  {
+                    "slide_number": 5,
+                    "role": "body",
+                    "asset_bank": "body_slides",
+                    "text": "Preacher curl\n6/10\nيعطيك مدى حركي ممتاز\nويستهدف البايسبس مباشرة\nبس فيه أفضل"
+                  },
+                  {
+                    "slide_number": 6,
+                    "role": "body",
+                    "asset_bank": "body_slides",
+                    "text": "Bayesian curl\n8/10\nتمرين مظلوم وضخم البايسبس عندي\nبسرعة بس فيه أفضل"
+                  },
+                  {
+                    "slide_number": 7,
+                    "role": "body",
+                    "asset_bank": "body_slides",
+                    "text": "Spider curl\n10/10\nتمرين فخم بشكل\nلا تسمع للي يقول قديم"
+                  }
+                ]
+              },
+              "en": {
+                "hook_text": "5 exercises that'll make your biceps look bigger than your head",
+                "slides": [
+                  {
+                    "slide_number": 1,
+                    "role": "hook",
+                    "asset_bank": "visual_hooks",
+                    "text": "5 exercises that'll make your biceps\nlook bigger than your head"
+                  },
+                  {
+                    "slide_number": 2,
+                    "role": "body",
+                    "asset_bank": "body_slides",
+                    "text": "Dumbbell curl\n1/10\nPretty basic\nthere are way better options"
+                  },
+                  {
+                    "slide_number": 3,
+                    "role": "body",
+                    "asset_bank": "body_slides",
+                    "text": "Hammer curl\n4/10\nNot bad\nbut nothing special"
+                  },
+                  {
+                    "slide_number": 4,
+                    "role": "cta",
+                    "asset_bank": "app_icon_home_screen",
+                    "text": "Track your weights so you actually progress\nuse this app"
+                  },
+                  {
+                    "slide_number": 5,
+                    "role": "body",
+                    "asset_bank": "body_slides",
+                    "text": "Preacher curl\n6/10\nGreat stretch\nhits the biceps really well\nbut there’s still better"
+                  },
+                  {
+                    "slide_number": 6,
+                    "role": "body",
+                    "asset_bank": "body_slides",
+                    "text": "Bayesian curl\n8/10\nSuper underrated\nthis grew my biceps fast\nbut one exercise beats it"
+                  },
+                  {
+                    "slide_number": 7,
+                    "role": "body",
+                    "asset_bank": "body_slides",
+                    "text": "Spider curl\n10/10\nSo good\ndon’t listen to anyone saying it’s outdated"
+                  }
+                ]
+              },
+              "es": {
+                "hook_text": "5 ejercicios que harán que tus bíceps se vean más grandes que tu cabeza",
+                "slides": [
+                  {
+                    "slide_number": 1,
+                    "role": "hook",
+                    "asset_bank": "visual_hooks",
+                    "text": "5 ejercicios que harán que tus bíceps\nse vean más grandes que tu cabeza"
+                  },
+                  {
+                    "slide_number": 2,
+                    "role": "body",
+                    "asset_bank": "body_slides",
+                    "text": "Dumbbell curl\n1/10\nMuy básico\nhay opciones mucho mejores"
+                  },
+                  {
+                    "slide_number": 3,
+                    "role": "body",
+                    "asset_bank": "body_slides",
+                    "text": "Hammer curl\n4/10\nNo está mal\npero tampoco es la gran cosa"
+                  },
+                  {
+                    "slide_number": 4,
+                    "role": "cta",
+                    "asset_bank": "app_icon_home_screen",
+                    "text": "Lleva un registro de tus pesos para progresar de verdad\nusa esta app"
+                  },
+                  {
+                    "slide_number": 5,
+                    "role": "body",
+                    "asset_bank": "body_slides",
+                    "text": "Preacher curl\n6/10\nMuy buen estiramiento\ntrabaja el bíceps súper bien\npero todavía hay uno mejor"
+                  },
+                  {
+                    "slide_number": 6,
+                    "role": "body",
+                    "asset_bank": "body_slides",
+                    "text": "Bayesian curl\n8/10\nEstá muy infravalorado\na mí me hizo crecer los bíceps rápido\npero hay uno que lo supera"
+                  },
+                  {
+                    "slide_number": 7,
+                    "role": "body",
+                    "asset_bank": "body_slides",
+                    "text": "Spider curl\n10/10\nEstá brutal\nno le hagas caso a quien diga que ya pasó de moda"
+                  }
+                ]
+              },
+              "fr": {
+                "hook_text": "5 exercices qui feront paraître tes biceps plus gros que ta tête",
+                "slides": [
+                  {
+                    "slide_number": 1,
+                    "role": "hook",
+                    "asset_bank": "visual_hooks",
+                    "text": "5 exercices qui feront paraître tes biceps\nplus gros que ta tête"
+                  },
+                  {
+                    "slide_number": 2,
+                    "role": "body",
+                    "asset_bank": "body_slides",
+                    "text": "Dumbbell curl\n1/10\nVraiment basique\nil y a largement mieux"
+                  },
+                  {
+                    "slide_number": 3,
+                    "role": "body",
+                    "asset_bank": "body_slides",
+                    "text": "Hammer curl\n4/10\nPas mal\nmais rien d'incroyable"
+                  },
+                  {
+                    "slide_number": 4,
+                    "role": "cta",
+                    "asset_bank": "app_icon_home_screen",
+                    "text": "Note tes charges pour vraiment progresser\nutilise cette appli"
+                  },
+                  {
+                    "slide_number": 5,
+                    "role": "body",
+                    "asset_bank": "body_slides",
+                    "text": "Preacher curl\n6/10\nSuper bon étirement\nça cible très bien les biceps\nmais il y a encore mieux"
+                  },
+                  {
+                    "slide_number": 6,
+                    "role": "body",
+                    "asset_bank": "body_slides",
+                    "text": "Bayesian curl\n8/10\nVraiment sous-coté\nce mouvement a fait grossir mes biceps rapidement\nmais il y en a un encore meilleur"
+                  },
+                  {
+                    "slide_number": 7,
+                    "role": "body",
+                    "asset_bank": "body_slides",
+                    "text": "Spider curl\n10/10\nUne dinguerie\nn'écoute pas ceux qui disent qu'il est dépassé"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "p4": []
+  }
+}
